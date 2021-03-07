@@ -1,7 +1,11 @@
 hours = input("Enter Hours Worked:")
 rate = input("Enter Pay Per Hour:")
-fl_hours=float(hours) #convert the inputs to floats so you can use arithmatic operators
-fl_rate=float(rate)
+try:
+    fl_hours=float(hours)
+    fl_rate=float(rate) #convert the inputs to floats so you can use arithmatic operators
+except:
+    print("Error, please enter a numeric value")
+    quit() # if input is not numeric code will stop here
 
 if fl_hours>40: #half rate overtime pay added for hours above 40 
     overtime= (fl_hours-40) * (fl_rate*0.5)
