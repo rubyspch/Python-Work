@@ -1,11 +1,11 @@
-def average_answer(answer):
+def average_answer(answer, list):
     if answer.lower()=="yes":
-        print(sum(total)/ len(total))
+        print(sum(list)/ len(list))
     elif answer.lower()=="no":
         print("No worries")
     else:
         print("I don't understand sorry")
-        
+
 num = 0
 total=list()
 while True:
@@ -22,5 +22,5 @@ while True:
 print("Your total is: ",sum(total))
 
 
-average_question=input("Do you want to know the average?")
-average_answer(average_question)
+average_question=input("Do you want to know the mean average?")
+average_answer(average_question, total)
