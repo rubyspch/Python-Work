@@ -1,5 +1,5 @@
 num = 0
-total= 0.0
+total=list()
 while True:
     val= input("Enter a number: ")
     if val=='done':
@@ -10,5 +10,6 @@ while True:
         print("Invalid input")
         continue
     num=num+1
-    total=total+fval
-print("Your total is: ",total)
+    total.append(fval)
+print("Your total is: ",sum(total))
+
