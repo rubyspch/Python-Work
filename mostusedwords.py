@@ -10,11 +10,11 @@ for k,v in count.items(): #for each tuple created by count.items
     ntuple=(v,k) #creae a new tuple written as v,k
     vklist.append(ntuple) #and add it to vklist
 
-vklist=sorted(vklist, reverse=True)
+vklist=sorted(vklist, reverse=True) #sort list largest to smallest value
 
-mostused10=list()
-for v,k in vklist[:10]:
-    fliptuple=(k,v)
-    mostused10.append(fliptuple)
+mostused10=list() #create empty list
+for v,k in vklist[:10]: #for the first 10 v,k of vklist
+    fliptuple=(k,v) #flip each to k,v and assign to fliptuple
+    mostused10.append(fliptuple) #append to empty list
 
-print(mostused10)
+print(mostused10) #print list of 10 most used words
