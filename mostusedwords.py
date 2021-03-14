@@ -18,3 +18,6 @@ for v,k in vklist[:10]: #for the first 10 v,k of vklist
     mostused10.append(fliptuple) #append to empty list
 
 print(mostused10) #print list of 10 most used words
+
+#SHORT VERSION OF CODE:
+print(sorted([(v,k) for k,v in count.items()], reverse=True))
