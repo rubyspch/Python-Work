@@ -26,3 +26,7 @@ print(h)
 
 i=np.eye(3,3) #creates matrix with disgonal 1s and the rest as 0s
 print(i)
+
+j=np.random.randint(0,11, size=3) #creates array of 3 random integers between 0 and 10
+print(j)
+
