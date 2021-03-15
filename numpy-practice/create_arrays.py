@@ -12,3 +12,5 @@ d=np.array([[1,1], [1,1], [1,1]])
 d=d.astype(np.float) #changes type of elements to float
 print(d)
 
+e=np.repeat(1,5)
+print(f'e={e}')
