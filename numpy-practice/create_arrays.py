@@ -13,16 +13,16 @@ d=d.astype(np.float) #changes type of elements to float
 print(d)
 
 e=np.repeat(1,5)
-print(f'e={e}')
+print(f'e={e}') #create array of ones and prints with string literal
 
-f=np.repeat(5,16).reshape(4,4)
+f=np.repeat(5,16).reshape(4,4) #repeats 5 16 times, and reshapes elements into 4 rows and 4 columns
 print(f)
 
 g=np.repeat(7,4).reshape(2,2)
-h=np.full((2,2),7)
+h=np.full((2,2),7) #creates 2*2 matrix and fills it with 7s
 
 print(g)
 print(h)
 
-i=np.eye(3,3)
+i=np.eye(3,3) #creates matrix with disgonal 1s and the rest as 0s
 print(i)
