@@ -8,3 +8,7 @@ print(b)
 c=np.array([[1,1],[1,1]])
 print(c.shape) #outputs shape of matrix (2,2)
 
+d=np.array([[1,1], [1,1], [1,1]])
+d=d.astype(np.float) #changes type of elements to float
+print(d)
+
