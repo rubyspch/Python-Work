@@ -1,3 +1,4 @@
+import numpy as np
 a = np.array(['A','B','C','D','E'])
 print(a[0]) #prints first element
 print(a[4]) #prints fifth element
