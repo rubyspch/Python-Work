@@ -33,3 +33,9 @@ print(j)
 k = [1, 2, 3] #create python array k...
 l=np.array(k) #...convert python array k to NumPy
 print(l, type(l))
+
+m=np.arange(1,11,2) #create array of odd numbers 1-10
+print(m)
+
+n=np.flip(np.arange(1,11)) #Create array of 1-10 reversed
+print(n)
