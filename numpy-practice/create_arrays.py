@@ -23,3 +23,6 @@ h=np.full((2,2),7)
 
 print(g)
 print(h)
+
+i=np.eye(3,3)
+print(i)
