@@ -4,3 +4,6 @@ print(a[0]) #prints first element
 print(a[4]) #prints fifth element
 print(a[:3]) #prints first 3 elements
 print(a[1:4]) #prints middle elements
+
+print(np.flip(a)) #prints a in reverse
+print(X[::2]) #shows all elements in odd positions
