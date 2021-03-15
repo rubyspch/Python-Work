@@ -8,3 +8,5 @@ X = np.array([
 ])
 print(X[0]) #prints first row
 print(X[3]) #prints last row 
+print(X[0][0]) #prints first element on first row
+print(X[3][3]) #prints last element on last row
