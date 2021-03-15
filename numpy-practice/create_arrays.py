@@ -14,3 +14,6 @@ print(d)
 
 e=np.repeat(1,5)
 print(f'e={e}')
+
+f=np.repeat(5,16).reshape(4,4)
+print(f)
