@@ -17,3 +17,9 @@ print(f'e={e}')
 
 f=np.repeat(5,16).reshape(4,4)
 print(f)
+
+g=np.repeat(7,4).reshape(2,2)
+h=np.full((2,2),7)
+
+print(g)
+print(h)
