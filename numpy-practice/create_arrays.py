@@ -30,3 +30,6 @@ print(i)
 j=np.random.randint(0,11, size=3) #creates array of 3 random integers between 0 and 10
 print(j)
 
+k = [1, 2, 3] #create python array k...
+l=np.array(k) #...convert python array k to NumPy
+print(l, type(l))
