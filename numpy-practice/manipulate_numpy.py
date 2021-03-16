@@ -13,3 +13,11 @@ print(f'After: {c}') #outputs changed array
 
 d = np.array([10, 20, 30, 50]) #creates array
 d[3]=40 #changes last element
+
+e = np.array([ #create array e
+    [1,   2,  3,  4],
+    [5,   6,  7,  8],
+    [9,  10, 11, 12],
+    [13, 14, 15, 16]
+])
+e[3]=[1,1,1,1] #change last row to all ones
