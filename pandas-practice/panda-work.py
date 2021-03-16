@@ -7,8 +7,8 @@ X = ['A','B','C'] #create python list
 print(X, type(X))
 Y = pd.Series(X) #convert python list X to pandas series Y
 print(Y, type(Y))
-Y.name='My letters'
-print(Y.values)
+Y.name='My letters' #gives series a name
+print(Y.values) #prints the series values
 
 index_names = ['first', 'second', 'third'] 
 Y.index=index_names #adds list of strings to series as index names
