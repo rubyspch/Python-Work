@@ -9,3 +9,8 @@ Y = pd.Series(X) #convert python list X to pandas series Y
 print(Y, type(Y))
 Y.name='My letters'
 print(Y.values)
+
+index_names = ['first', 'second', 'third'] 
+Y.index=index_names #adds list of strings to series as index names
+print(Y['first']) #prints element with index first
+print(Y['third']) #prints element with index third 
