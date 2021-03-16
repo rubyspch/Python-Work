@@ -21,3 +21,4 @@ e = np.array([ #create array e
     [13, 14, 15, 16]
 ])
 e[3]=[1,1,1,1] #change last row to all ones
+e[3][3]=0 #change last element to 0
