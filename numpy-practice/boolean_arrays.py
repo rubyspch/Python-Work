@@ -9,4 +9,4 @@ c = np.array([-1, 2, 0, -4, 5, 6, 0, 0, -9, 10])
 print(c[c>5]) #prints values in c that are greater than 5
 
 d = np.array([-1, 2, 0, -4, 5, 6, 0, 0, -9, 10])
-print(d[d>d.mean()])
+print(d[d>d.mean()]) #prints mean of d
