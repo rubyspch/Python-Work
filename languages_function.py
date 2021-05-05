@@ -5,8 +5,6 @@ def translate(lang):
         return "Hallo"
     elif lang=="fr":
         return "Bonjour"
-    elif lang=="de":
-        return "Hallo"
     else:
      return "Hello"
 uname= input("What is your name?")
