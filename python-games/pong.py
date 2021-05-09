@@ -34,6 +34,15 @@ ball.goto(0,0)
 ball.dx = 0.2 #delta/change. every time the ball moves, it moves by 2 pixels, in dx and dy directions. rest of ball movement code in the Main game loop section
 ball.dy = 0.2
 
+#Score Pen
+pen = turtle.Turtle()
+pen.speed(0)
+pen.color("orange")
+pen.penup()
+pen.hideturtle()
+pen.goto(0,260)
+pen.write("Player A : 0  Player B : 0", align="center", font=("Courier", 16, "normal"))
+
 #Function
 def paddle_a_up():
     y= paddle_a.ycor() #ycor method is from turtle, it returns y co-ord
