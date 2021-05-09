@@ -32,6 +32,15 @@ ball.color("white")
 ball.penup()
 ball.goto(0,0)
 
+#Function
+def paddle_a_up():
+    y= paddle_a.ycor() #ycor method is from turtle, it returns y co-ord
+    y += 20
+    paddle_a.sety(y) #set the y co ord of p_a to the new +20 value
+
+#Keyboard binding
+wn.listen() #listen for keyboard input
+wn.onkeypress(paddle_a_up, "w") #when user presses w, call paddle_a_up function
 #Main game loop
 while True:
     wn.update()
