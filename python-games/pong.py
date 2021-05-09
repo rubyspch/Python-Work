@@ -31,6 +31,8 @@ ball.shape("square")
 ball.color("white")
 ball.penup()
 ball.goto(0,0)
+ball.dx = 0.2 #delta/change. every time the ball moves, it moves by 2 pixels, in dx and dy directions. rest of ball movement code in the Main game loop section
+ball.dy = 0.2
 
 #Function
 def paddle_a_up():
@@ -61,3 +63,39 @@ wn.onkeypress(paddle_b_down, "Down")
 #Main game loop
 while True:
     wn.update()
+
+    #Move the ball
+    ball.setx(ball.xcor() + ball.dx)
+    ball.sety(ball.ycor() + ball.dy)
+
+    #Border checking
+
+    #top border
+    if ball.ycor()> 290:
+        ball.sety(290)
+        ball.dy *= -1 #reverses the direction, bc 0.1 becomes -0.1
+
+    #bottom border
+    if ball.ycor()< -290:
+        ball.sety(-290)
+        ball.dy *= -1 
+    
+    #left/right borders 
+    if ball.xcor()>390:
+        ball.goto(0,0)
+        ball.dx *= -1
+
+    if ball.xcor()<-390:
+        ball.goto(0,0)
+        ball.dx *= -1
+
+    #paddle ball collision
+    #right
+    if (ball.xcor()> 340 and ball.xcor()<350) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40):
+        ball.setx(340)
+        ball.dx*=-1
+    #left
+    if (ball.xcor()< -340 and ball.xcor()>-350) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() - 40):
+        ball.setx(-340)
+        ball.dx*=-1
+    
