@@ -6,6 +6,10 @@ wn.title("Pong")
 wn.bgcolor("black")
 wn.tracer(0) #stops windows from updating, have to manually update them
 
+#Score
+score_a=0
+score_b=0
+
 #Paddle A
 paddle_a=turtle.Turtle() #creates paddle_a turtle object from Turtle class
 paddle_a.speed(0) #speed of animation for turtle, set to maximum
@@ -93,10 +97,17 @@ while True:
     if ball.xcor()>390:
         ball.goto(0,0)
         ball.dx *= -1
+        score_a += 1
+        pen.clear() #quickley clears the screen so the changing score doesn't keep writing on top of itself
+        pen.write("Player A : {}  Player B : {}".format(score_a, score_b), align="center", font=("Courier", 16, "normal"))
+
 
     if ball.xcor()<-390:
         ball.goto(0,0)
         ball.dx *= -1
+        score_b += 1
+        pen.clear()
+        pen.write("Player A : {}  Player B : {}".format(score_a, score_b), align="center", font=("Courier", 16, "normal"))
 
     #paddle ball collision
     #right
