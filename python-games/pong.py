@@ -4,9 +4,7 @@ turtle.setup(width=800, height=600)
 wn = turtle.Screen() #creates paddle_a window
 wn.title("Pong")
 wn.bgcolor("black")
-#wn.tracer(0) #stops windows from updating, have to manually update them
-
-#Main game loop
+wn.tracer(0) #stops windows from updating, have to manually update them
 
 #Paddle A
 paddle_a=turtle.Turtle() #creates paddle_a turtle object from Turtle class
@@ -34,5 +32,6 @@ ball.color("white")
 ball.penup()
 ball.goto(0,0)
 
-
-turtle.done()
+#Main game loop
+while True:
+    wn.update()
