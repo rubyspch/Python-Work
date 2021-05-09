@@ -37,10 +37,27 @@ def paddle_a_up():
     y= paddle_a.ycor() #ycor method is from turtle, it returns y co-ord
     y += 20
     paddle_a.sety(y) #set the y co ord of p_a to the new +20 value
+def paddle_a_down():
+    y= paddle_a.ycor() 
+    y -= 20
+    paddle_a.sety(y) 
+
+def paddle_b_up():
+    y= paddle_b.ycor() 
+    y += 20
+    paddle_b.sety(y) 
+def paddle_b_down():
+    y= paddle_b.ycor() 
+    y -= 20
+    paddle_b.sety(y) 
 
 #Keyboard binding
 wn.listen() #listen for keyboard input
 wn.onkeypress(paddle_a_up, "w") #when user presses w, call paddle_a_up function
+wn.onkeypress(paddle_a_down, "s")
+wn.onkeypress(paddle_b_up, "Up")
+wn.onkeypress(paddle_b_down, "Down")
+
 #Main game loop
 while True:
     wn.update()
